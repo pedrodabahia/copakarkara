@@ -27,7 +27,7 @@ export default function App() {
       <Header />
       <ScrollToTop />
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black" />
 
         {/* Grunge texture overlay */}
@@ -84,26 +84,13 @@ export default function App() {
                     fontWeight: 900,
                     letterSpacing: '-0.05em',
                   }}
-                  animate={{
-                    textShadow: [
-                      '0 0 30px rgba(245,158,11,0.5), 0 0 60px rgba(249,115,22,0.3)',
-                      '0 0 40px rgba(245,158,11,0.7), 0 0 80px rgba(249,115,22,0.5)',
-                      '0 0 30px rgba(245,158,11,0.5), 0 0 60px rgba(249,115,22,0.3)',
-                    ],
-                  }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
                   COPA KARKARÁ
                 </motion.h1>
                 <motion.div
                   className="h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent rounded-full shadow-[0_0_20px_rgba(245,158,11,0.8)]"
-                  animate={{
-                    boxShadow: [
-                      '0 0 20px rgba(245,158,11,0.8)',
-                      '0 0 40px rgba(249,115,22,1)',
-                      '0 0 20px rgba(245,158,11,0.8)',
-                    ],
-                  }}
+
                   transition={{ duration: 2, repeat: Infinity }}
                 />
               </div>
