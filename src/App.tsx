@@ -392,14 +392,14 @@ export default function App() {
           </motion.div>
 
           <FightCard fighter1="Danilo Moraes" fighter2="Leo Said" image={daniloFlyer} colorBg={'orange'} corTexto={'black'}/>
-          <FightCard fighter1="Van Damme" fighter2="Maycon" image={vandamme} colorBg={'black'}/>
-          <FightCard fighter1="Adriano" fighter2="Edgar" image={adriano} colorBg={'black'}/>
-          <FightCard fighter1="Victor Matias" fighter2="Benícios" image={benicios} colorBg={'black'}/>
-          <FightCard fighter1="Elias" fighter2="Darlan" image={elias} colorBg={'black'}/>
-          <FightCard fighter1="Geberson" fighter2="Douglas" image={geberson} colorBg={'black'}/>
-          <FightCard fighter1="Paulo Felipe" fighter2="Luan Lopes" image={paulo} colorBg={'black'}/>
-          <FightCard fighter1="Téo" fighter2="Leonam" image={teo} colorBg={'black'}/>
-          <FightCard fighter1="Werick" fighter2="Erick Silva" image={werick} colorBg={'black'}/>
+          <FightCard fighter1="Van Damme" fighter2="Maycon" image={vandamme} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Adriano" fighter2="Edgar" image={adriano} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Victor Matias" fighter2="Benícios" image={benicios} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Elias" fighter2="Darlan" image={elias} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Geberson" fighter2="Douglas" image={geberson} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Paulo Felipe" fighter2="Luan Lopes" image={paulo} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Téo" fighter2="Leonam" image={teo} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Werick" fighter2="Erick Silva" image={werick} colorBg={'black'} corTexto={'white'}/>
 
 
 
