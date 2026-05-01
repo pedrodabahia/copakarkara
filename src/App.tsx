@@ -157,6 +157,7 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
+              onClick={handleWhatsAppClick}
                 className="group relative px-8 py-4 bg-gradient-to-r from-amber-500 via-orange-500 to-red-600 rounded-lg overflow-hidden transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -173,7 +174,7 @@ export default function App() {
                 <div className="absolute inset-0 overflow-hidden">
                   {[...Array(10)].map((_, i) => (
                     <motion.div
-                      onClick={handleWhatsAppClick}
+                      
                       key={i}
                       className="absolute bottom-0 w-1 h-1 bg-amber-300 rounded-full"
                       style={{ left: `${i * 10}%` }}
@@ -666,6 +667,7 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 flex-wrap">
               <motion.button
+              onClick={handleWhatsAppClick}
                 className="group relative px-10 py-5 bg-gradient-to-r from-amber-500 via-orange-500 to-red-600 rounded-lg overflow-hidden shadow-[0_0_40px_rgba(245,158,11,0.4)]"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -686,7 +688,6 @@ export default function App() {
                 <div className="absolute inset-0">
                   {[...Array(15)].map((_, i) => (
                     <motion.div
-                    onClick={handleWhatsAppClick}
 
                       key={i}
                       className="absolute w-1 h-1 bg-white rounded-full"
