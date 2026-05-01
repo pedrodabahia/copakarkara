@@ -24,12 +24,7 @@ import vandamme from './imagesFighters/vandamme.jpeg';
 import werick from './imagesFighters/werick.jpeg';
 import paulo from './imagesFighters/paulo.jpeg';
 
-const colorsBg = {
-  orange: "bg-orange-500/20",
-  red: "bg-red-500/20",
-  green: "bg-green-500/20",
-  black: "bg-black/20",
-};
+
 
 export default function App() {
   const whatsappNumber = '5573999649599';

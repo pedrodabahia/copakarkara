@@ -1,13 +1,4 @@
-import { motion } from 'motion/react';
-import { Trophy, Flame } from 'lucide-react';
-import { useState } from 'react';
 
-interface FightCardProps {
-  fighter1: string;
-  fighter2: string;
-  type?: 'main' | 'title';
-  index?: number;
-}
 const colors20 = {
   orange: "bg-orange-500/20",
   red: "bg-red-500/20",
