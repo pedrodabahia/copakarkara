@@ -14,6 +14,23 @@ import { LightningEffect } from './components/LightningEffect';
 import { SmokeEffect } from './components/SmokeEffect';
 import { SpotlightEffect } from './components/SpotlightEffect';
 
+import daniloFlyer from './imagesFighters/danilo.jpeg';
+import adriano from './imagesFighters/adriano.jpeg';
+import benicios from './imagesFighters/benicios.jpeg';
+import elias from './imagesFighters/elias.jpeg';
+import geberson from './imagesFighters/paulo.jpeg';
+import teo from './imagesFighters/teo.jpeg';
+import vandamme from './imagesFighters/vandamme.jpeg';
+import werick from './imagesFighters/werick.jpeg';
+import paulo from './imagesFighters/paulo.jpeg';
+
+const colorsBg = {
+  orange: "bg-orange-500/20",
+  red: "bg-red-500/20",
+  green: "bg-green-500/20",
+  black: "bg-black/20",
+};
+
 export default function App() {
   const whatsappNumber = '5573999649599';
   const eventDate = '2026-05-16T19:00:00';
@@ -27,7 +44,7 @@ export default function App() {
       <Header />
       <ScrollToTop />
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-40">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black" />
 
         {/* Grunge texture overlay */}
@@ -350,7 +367,7 @@ export default function App() {
         <div className="absolute top-0 left-1/4 w-1 h-full bg-gradient-to-b from-amber-500/30 via-transparent to-transparent" />
         <div className="absolute top-0 right-1/4 w-1 h-full bg-gradient-to-b from-orange-500/30 via-transparent to-transparent" />
 
-        <div className="relative container mx-auto px-4">
+        <div className="relative container justfy-center mx-auto px-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -374,12 +391,18 @@ export default function App() {
             </p>
           </motion.div>
 
-          <div className="max-w-4xl mx-auto space-y-6">
-            <FightCard fighter1="Danilo Moraes" fighter2="Lucas Said" type="main" index={0} />
-            <FightCard fighter1="Van Damme" fighter2="Maycon Batista" type="title" index={1} />
-            <FightCard fighter1="Atleta 1" fighter2="Atleta 2" index={2} />
-            <FightCard fighter1="Atleta 3" fighter2="Atleta 4" index={3} />
-          </div>
+          <FightCard fighter1="Danilo Moraes" fighter2="Leo Said" image={daniloFlyer} colorBg={'orange'} corTexto={'black'}/>
+          <FightCard fighter1="Van Damme" fighter2="Maycon" image={vandamme} colorBg={'black'}/>
+          <FightCard fighter1="Adriano" fighter2="Edgar" image={adriano} colorBg={'black'}/>
+          <FightCard fighter1="Victor Matias" fighter2="Benícios" image={benicios} colorBg={'black'}/>
+          <FightCard fighter1="Elias" fighter2="Darlan" image={elias} colorBg={'black'}/>
+          <FightCard fighter1="Geberson" fighter2="Douglas" image={geberson} colorBg={'black'}/>
+          <FightCard fighter1="Paulo Felipe" fighter2="Luan Lopes" image={paulo} colorBg={'black'}/>
+          <FightCard fighter1="Téo" fighter2="Leonam" image={teo} colorBg={'black'}/>
+          <FightCard fighter1="Werick" fighter2="Erick Silva" image={werick} colorBg={'black'}/>
+
+
+
         </div>
       </section>
 
@@ -484,8 +507,8 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <SponsorCard name="UNILABS" index={0} />
+            <SponsorCard name="DA PRAÇA" index={0} />
             <SponsorCard name="REMEQ" index={0} />
-
 
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
