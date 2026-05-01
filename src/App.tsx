@@ -173,6 +173,7 @@ export default function App() {
                 <div className="absolute inset-0 overflow-hidden">
                   {[...Array(10)].map((_, i) => (
                     <motion.div
+                      onClick={handleWhatsAppClick}
                       key={i}
                       className="absolute bottom-0 w-1 h-1 bg-amber-300 rounded-full"
                       style={{ left: `${i * 10}%` }}
@@ -685,6 +686,8 @@ export default function App() {
                 <div className="absolute inset-0">
                   {[...Array(15)].map((_, i) => (
                     <motion.div
+                    onClick={handleWhatsAppClick}
+
                       key={i}
                       className="absolute w-1 h-1 bg-white rounded-full"
                       style={{
@@ -726,6 +729,7 @@ export default function App() {
                   transition={{ duration: 0.3 }}
                 />
                 <motion.div
+                
                   className="absolute inset-0"
                   animate={{
                     boxShadow: [
