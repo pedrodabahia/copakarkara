@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Radio, Play, Calendar } from 'lucide-react';
+import { Play, Calendar } from 'lucide-react';
 
 interface LiveStreamSectionProps {
   status: 'upcoming' | 'live' | 'replay';
