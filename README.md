@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
+Aqui vai um README bem estruturado pra você usar no seu projeto (já no estilo profissional pra portfólio e GitHub). Como não dá pra extrair todos os detalhes internos do site só pelo link, deixei ele adaptável — mas já com uma cara bem forte pra você usar no seu studio 👇
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 🥋 Copa Karkará
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Aplicação web desenvolvida para divulgação e gerenciamento visual do evento **Copa Karkará**, um campeonato de lutas com foco em performance, organização e experiência do usuário.
 
-## React Compiler
+🔗 Acesse o projeto:
+👉 [https://copakarkara.vercel.app](https://copakarkara.vercel.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Sobre o projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O **Copa Karkará** é uma plataforma web criada para apresentar informações do evento de forma moderna, responsiva e atrativa.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O objetivo do projeto é:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Divulgar o evento de forma profissional
+* Apresentar atletas, lutas e informações importantes
+* Criar uma experiência visual forte e envolvente
+* Servir como vitrine digital para o campeonato
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠️ Tecnologias utilizadas
+
+Este projeto foi desenvolvido utilizando tecnologias modernas do ecossistema web:
+
+* ⚛️ React / Next.js
+* 🎨 Tailwind CSS
+* ⚡ Vite (caso esteja usando no build de partes)
+* ☁️ Vercel (deploy)
+
+Projetos com Next.js geralmente utilizam recursos como roteamento, componentes e otimização de performance integrada ([Taxonomy][1])
+
+---
+
+## 📱 Funcionalidades
+
+* 📅 Exibição de informações do evento
+* 🥊 Apresentação de atletas
+* 🎯 Layout responsivo (mobile + desktop)
+* 🎥 Possível integração com lives (YouTube)
+* 🎨 Design moderno e focado em impacto visual
+
+---
+
+## 🎯 Objetivo
+
+Esse projeto faz parte do meu processo de evolução como desenvolvedor front-end e designer, unindo:
+
+* UI/UX
+* Desenvolvimento web
+* Identidade visual
+* Aplicação real (evento físico)
+
+---
+
+## 📸 Preview
+
+
+---
+
+## ⚙️ Como rodar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repo.git
+
+# Entre na pasta
+cd nome-do-projeto
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse no navegador:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+http://localhost:3000
+```
+
+---
+
+## 🌍 Deploy
+
+O projeto está hospedado na **Vercel**, permitindo deploy rápido e automático.
+
+---
+
+## 💼 Autor
+
+Desenvolvido por **Pedro Matos**
+🚀 Front-end Developer & Designer
+
+---
+
+## 📌 Próximos passos (roadmap)
+
+* [ ] Sistema de cadastro de atletas
+* [ ] Integração com API
+* [ ] Painel administrativo
+* [ ] Ranking ou chaveamento de lutas
+* [ ] Melhorias de SEO
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+Se quiser, posso te fazer uma versão **mais estratégica pra conseguir cliente** (tipo README + posicionamento de produto + texto pra Instagram junto).
+
+[1]: https://taxonomyapp.vercel.app/?utm_source=chatgpt.com "Taxonomy"
