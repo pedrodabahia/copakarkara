@@ -25,6 +25,8 @@ import werick from './imagesFighters/werick.jpeg';
 import paulo from './imagesFighters/paulo.jpeg';
 import david from './imagesFighters/david.jpeg';
 import gabriel from './imagesFighters/gabriel.jpeg';
+import andre from './imagesFighters/andre.jpeg';
+import xavier from './imagesFighters/xavier.jpeg';
 
 
 
@@ -393,7 +395,9 @@ export default function App() {
           <FightCard fighter1="Danilo Moraes" fighter2="Leo Said" image={daniloFlyer} colorBg={'orange'} corTexto={'black'}/>
           <FightCard fighter1="Van Damme" fighter2="Maycon" image={vandamme} colorBg={'black'} corTexto={'white'}/>
           <FightCard fighter1="Adriano" fighter2="Edgar" image={adriano} colorBg={'black'} corTexto={'white'}/>
-          <FightCard fighter1="Victor Matias" fighter2="Benícios" image={benicios} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="André Coroa" fighter2="Carlos Henrique" image={benicios} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Rafael Xavier" fighter2="Erik Bredoff" image={andre} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Victor Matias" fighter2="Benícios" image={xavier} colorBg={'black'} corTexto={'white'}/>
           <FightCard fighter1="Elias" fighter2="Darlan" image={elias} colorBg={'black'} corTexto={'white'}/>
           <FightCard fighter1="Geberson" fighter2="Douglas" image={geberson} colorBg={'black'} corTexto={'white'}/>
           <FightCard fighter1="Paulo Felipe" fighter2="Luan Lopes" image={paulo} colorBg={'black'} corTexto={'white'}/>
