@@ -23,6 +23,8 @@ import teo from './imagesFighters/teo.jpeg';
 import vandamme from './imagesFighters/vandamme.jpeg';
 import werick from './imagesFighters/werick.jpeg';
 import paulo from './imagesFighters/paulo.jpeg';
+import david from './imagesFighters/david.jpeg';
+import gabriel from './imagesFighters/gabriel.jpeg';
 
 
 
@@ -397,6 +399,8 @@ export default function App() {
           <FightCard fighter1="Paulo Felipe" fighter2="Luan Lopes" image={paulo} colorBg={'black'} corTexto={'white'}/>
           <FightCard fighter1="Téo" fighter2="Leonam" image={teo} colorBg={'black'} corTexto={'white'}/>
           <FightCard fighter1="Werick" fighter2="Erick Silva" image={werick} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="David" fighter2="Athos" image={david} colorBg={'black'} corTexto={'white'}/>
+          <FightCard fighter1="Hélio" fighter2="Gabriel" image={gabriel} colorBg={'black'} corTexto={'white'}/>
 
 
 
@@ -808,10 +812,10 @@ export default function App() {
 
           <div className="text-center">
             <p className="text-zinc-600 text-sm mb-2">
-              © 2026 COPA KARKARÁ - Todos os direitos reservados
+              © 2026 Studio Matos - Todos os direitos reservados
             </p>
             <p className="text-zinc-700 text-xs">
-              Organizado por Marilton Karkará | Posto da Mata, Bahia
+              Site desenvolvido pela Studio Matos | @digitalmatos
             </p>
           </div>
         </div>
