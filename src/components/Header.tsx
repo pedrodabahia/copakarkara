@@ -79,7 +79,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 text-amber-500"
-            
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -104,8 +104,7 @@ export function Header() {
                   {item.label}
                 </a>
               ))}
-              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="mt-4 px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-black font-black rounded-lg text-sm flex items-center justify-center gap-2">
-
+              <button onClick={handleWhatsAppClick} className="mt-4 px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-black font-black rounded-lg text-sm flex items-center justify-center gap-2">
                 <Ticket className="w-4 h-4" />
                 INGRESSOS
               </button>
