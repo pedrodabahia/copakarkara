@@ -18,7 +18,7 @@ import daniloFlyer from './imagesFighters/danilo.jpeg';
 import adriano from './imagesFighters/adriano.jpeg';
 import benicios from './imagesFighters/benicios.jpeg';
 import elias from './imagesFighters/elias.jpeg';
-import geberson from './imagesFighters/paulo.jpeg';
+import geberson from './imagesFighters/geberson.jpeg';
 import teo from './imagesFighters/teo.jpeg';
 import vandamme from './imagesFighters/vandamme.jpeg';
 import werick from './imagesFighters/werick.jpeg';
@@ -270,7 +270,7 @@ export default function App() {
               transition={{ duration: 3, repeat: Infinity }}
             >
               <h2 className="text-4xl md:text-6xl font-black mb-2 text-transparent bg-clip-text bg-gradient-to-r from-white to-amber-400">
-                O MAIOR EVENTO DE LUTA DA REGIÃO
+                O MAIOR EVENTO DE BOXE DA REGIÃO
               </h2>
               <div className="h-1 w-48 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto rounded-full shadow-[0_0_15px_rgba(245,158,11,0.5)]" />
             </motion.div>
