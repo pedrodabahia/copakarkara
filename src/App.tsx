@@ -515,6 +515,7 @@ export default function App() {
             <SponsorCard name="DA PRAÇA" index={0} />
             <SponsorCard name="REMEQ" index={0} />
             <SponsorCard name="TAICIELLE" index={0} />
+            <SponsorCard name="STUDIO MATOS" index={0} />
 
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
