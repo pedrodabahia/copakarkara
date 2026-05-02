@@ -41,7 +41,7 @@ export function LiveStreamSection({ status = 'upcoming' }: LiveStreamSectionProp
           </div>
 
           {/* Video player */}
-          <div className="relative bg-black border-x-2 border-amber-500/30 aspect-video flex items-center justify-center overflow-hidden">
+          <div className="relative md:w-full md:h-full w-full h-full bg-black border-x-2 border-amber-500/30 aspect-video flex items-center justify-center overflow-hidden">
             {status === 'upcoming' && (
               <div className="text-center p-8">
                 <Calendar className="w-16 h-16 text-amber-500 mx-auto mb-4" />
@@ -52,29 +52,25 @@ export function LiveStreamSection({ status = 'upcoming' }: LiveStreamSectionProp
             )}
 
             {status === 'live' && (
-              <div className="relative w-full h-full bg-zinc-900 flex items-center justify-center">
-                <motion.div
-                  className="absolute top-4 left-4 px-4 py-2 bg-red-600 rounded-full flex items-center gap-2 z-10"
-                  animate={{
-                    boxShadow: [
-                      '0 0 0 0 rgba(239, 68, 68, 0.7)',
-                      '0 0 0 15px rgba(239, 68, 68, 0)',
-                    ],
-                  }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                  }}
-                >
-                  <Radio className="w-4 h-4 text-white" />
-                  <span className="text-sm font-black text-white">AO VIVO AGORA</span>
-                </motion.div>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className='w-full h-full md:col-span-2'>
+                <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/LYrNWoIsc54"
+                title="live"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                />
 
-                <div className="text-center">
-                  <Play className="w-24 h-24 text-white/50 mb-4 mx-auto" />
-                  <p className="text-white/70">Player ao vivo seria incorporado aqui</p>
-                </div>
               </div>
+              <div className="bg-zinc-900 rounded-xl">
+                <iframe
+                  src="https://www.youtube.com/live_chat?v=LYrNWoIsc54&embed_domain=localhost"
+                  width="100%"
+                  height="500">
+                </iframe>
+              </div>
+            </div>  
             )}
 
             {status === 'replay' && (

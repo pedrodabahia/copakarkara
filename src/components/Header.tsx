@@ -3,6 +3,10 @@ import { Menu, X, Ticket } from 'lucide-react';
 import { useState } from 'react';
 
 export function Header() {
+    const whatsappNumber = '5573999649599';
+    const handleWhatsAppClick = () => {
+    window.open(`https://wa.me/${whatsappNumber}?text=Olá! Tenho interesse na Copa Karkará`, '_blank');
+  };
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
   const headerBackground = useTransform(
@@ -62,6 +66,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <motion.button
+              onClick={handleWhatsAppClick}
               className="px-6 py-2 bg-gradient-to-r from-amber-500 to-orange-600 text-black font-black rounded-lg text-sm flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
