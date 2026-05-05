@@ -56,7 +56,7 @@ export function LiveStreamSection({ status = 'upcoming' }: LiveStreamSectionProp
               <div className='w-full h-full md:col-span-2'>
                 <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/LYrNWoIsc54"
+                src="https://www.youtube.com/embed/Kr3aCtAixPc"
                 title="live"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
