@@ -488,7 +488,7 @@ export default function App() {
       </section>
 
       {/* Live Stream Section */}
-      <LiveStreamSection status="upcoming" />
+      <LiveStreamSection status="live" />
 
       {/* Event Gallery */}
       <EventGallery />
