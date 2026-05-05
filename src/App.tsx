@@ -37,6 +37,9 @@ export default function App() {
   const handleWhatsAppClick = () => {
     window.open(`https://wa.me/${whatsappNumber}?text=Olá! Tenho interesse na Copa Karkará`, '_blank');
   };
+  const liveDirection = () => {
+    window.open("https://youtu.be/Kr3aCtAixPc","_blank");
+  }
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
@@ -758,6 +761,7 @@ export default function App() {
               </motion.button>
 
               <motion.button
+                onClick={liveDirection}
                 className="group relative px-10 py-5 bg-gradient-to-r from-red-600 to-red-700 border-2 border-red-500 rounded-lg overflow-hidden"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
