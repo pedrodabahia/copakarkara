@@ -63,7 +63,7 @@ export function LiveStreamSection({ status = 'upcoming' }: LiveStreamSectionProp
                 />
 
               </div>
-              <div className="bg-zinc-900 rounded-xl">
+              <div className="bg-zinc-900 hidden md:block rounded-xl">
                 <iframe
                   src="https://www.youtube.com/live_chat?v=LYrNWoIsc54&embed_domain=localhost"
                   width="100%"
