@@ -392,7 +392,7 @@ export default function App() {
             </p>
           </motion.div>
 
-          <FightCard fighter1="Danilo Moraes" fighter2="Leo Said" image={daniloFlyer} colorBg={'orange'} corTexto={'black'}/>
+          <FightCard fighter1="Danilo Moraes" fighter2="Lucas Said" image={daniloFlyer} colorBg={'orange'} corTexto={'black'}/>
           <FightCard fighter1="Van Damme" fighter2="Maycon" image={vandamme} colorBg={'black'} corTexto={'white'}/>
           <FightCard fighter1="Adriano" fighter2="Edgar" image={adriano} colorBg={'black'} corTexto={'white'}/>
           <FightCard fighter1="André Coroa" fighter2="Carlos Henrique" image={andre} colorBg={'black'} corTexto={'white'}/>
