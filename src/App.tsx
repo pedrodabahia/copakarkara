@@ -47,12 +47,14 @@ export default function App() {
   const eventDate = '2026-05-16T19:00:00';
 
   const handleWhatsAppClick = () => {
-    window.open(`https://wa.me/${whatsappNumber}?text=Olá! Tenho interesse na Copa Karkará`, '_blank');
+    window.location.href = "#live"
   };
   const liveDirection = () => {
     window.open("https://youtu.be/Kr3aCtAixPc","_blank");
   }
-
+  const galeriaLink = () => {
+    window.location.href ="./#galeria"
+  }
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <Header />
@@ -176,7 +178,7 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
-              onClick={handleWhatsAppClick}
+              onClick={galeriaLink}
                 className="group relative px-8 py-4 bg-gradient-to-r from-amber-500 via-orange-500 to-red-600 rounded-lg overflow-hidden transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -212,7 +214,7 @@ export default function App() {
                 </div>
 
                 <span className="relative z-10 font-black tracking-wide text-black flex items-center gap-2 drop-shadow-lg">
-                  QUERO IR
+                  VER FOTOS
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </motion.button>
@@ -240,9 +242,8 @@ export default function App() {
                   }}
                   transition={{ duration: 2, repeat: Infinity }}
                 />
-                <span className="relative z-10 font-black tracking-wide flex items-center gap-2 group-hover:text-black transition-colors">
-                  <MessageCircle className="w-5 h-5" />
-                  FALAR NO WHATSAPP
+                <span className=" relative z-10 font-black tracking-wide flex items-center gap-2 group-hover:text-white transition-colors">
+                  REPLAY DA LIVE
                 </span>
               </motion.button>
             </div>
