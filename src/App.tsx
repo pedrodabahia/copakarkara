@@ -28,6 +28,18 @@ import gabriel from './imagesFighters/gabriel.jpeg';
 import andre from './imagesFighters/andre.jpeg';
 import xavier from './imagesFighters/xavier.jpeg';
 
+import dapraca from './imagesPatrocinadores/dapraca.png';
+import assis from './imagesPatrocinadores/assis.jpeg';
+import arenafit from './imagesPatrocinadores/arenafit.png';
+import embalafrios from './imagesPatrocinadores/embalafrios.jpeg';
+import drzeluis from './imagesPatrocinadores/drzeluis.jpeg';
+import hms from './imagesPatrocinadores/hms.jpeg';
+import prefeitura from './imagesPatrocinadores/prefeitura.jpeg';
+import taicielle from './imagesPatrocinadores/taicielle.jpeg';
+import unilabs from './imagesPatrocinadores/unilabs.jpeg';
+import temperodemae from './imagesPatrocinadores/temperodemae.png';
+import remeq from './imagesPatrocinadores/remeq.jpeg';
+import studiomatos from './imagesPatrocinadores/studiomatos.png';
 
 
 export default function App() {
@@ -514,11 +526,18 @@ export default function App() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <SponsorCard name="UNILABS" index={0} />
-            <SponsorCard name="DA PRAÇA" index={0} />
-            <SponsorCard name="REMEQ" index={0} />
-            <SponsorCard name="TAICIELLE" index={0} />
-            <SponsorCard name="STUDIO MATOS" index={0} />
+            <SponsorCard linkPat="https://wa.me/557399428000" image={unilabs} index={0} />
+            <SponsorCard linkPat="https://wa.me/557399786863" image={remeq} index={0} />
+            <SponsorCard linkPat="https://wa.me/5527998670705" image={drzeluis} index={0} />
+            <SponsorCard linkPat="https://wa.me/557399929430" image={hms} index={0} />
+            <SponsorCard linkPat="https://wa.me/557399916255" image={studiomatos} index={0} />
+            <SponsorCard linkPat="https://wa.me/557399525483" image={dapraca} index={0} />
+            <SponsorCard linkPat="https://wa.me/557399532875" image={assis} index={0} />
+            <SponsorCard linkPat="https://wa.me/557398030875" image={embalafrios} index={0} />
+            <SponsorCard linkPat="https://wa.me/557399260247" image={prefeitura} index={0} />
+            <SponsorCard linkPat="https://www.instagram.com/taicielle/" image={taicielle} index={0} />
+            <SponsorCard linkPat="https://wa.me/557398333386" image={temperodemae} index={0} />
+            <SponsorCard linkPat="https://wa.me/557398019349" image={arenafit} index={0} />
 
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Image, Camera } from 'lucide-react';
+import { OliverSecao } from './oliverSction';
 
 const galleryItems = [
   { title: 'Momentos da Torcida', icon: Camera },
@@ -99,6 +100,7 @@ export function EventGallery() {
           </div>
         </motion.div>
       </div>
+      <OliverSecao/>
     </section>
   );
 }
